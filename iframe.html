@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ifram SOP Restriction</title>
+	<script type="text/javascript">
+		function checkIframe() {
+			const iframe = document.getElementById('iframe');
+			const message = iframe.contentDocument.getElementById('message').innerText;
+			console.log(message)
+		}
+		
+	</script>
+</head>
+<body>
+
+	Please open the console window to see results. (Ctrl + Shift + C)
+
+	<button onclick="checkIframe()">Click to check</button>
+
+	<br>
+	Below is the iframe element. 
+	<iframe src="https://syedjafer.github.io/cors-testing-repo/index.html" style="height:200px;width:300px;border: 1px solid black;" title="Iframe Example"></iframe>
+
+</body>
+</html>
